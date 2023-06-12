@@ -77,9 +77,9 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"lan_ip #c4a7e7 0 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
-		"wan_ip #c4a7e7 0" \
-		"vcs_branch #907aa9 0" \
+		"lan_ip #907aa9 0 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+		"wan_ip #907aa9 0" \
+		"vcs_branch #c4a7e7 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 286983 255" \
 		#"vcs_compare #31748f 255" \
