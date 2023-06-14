@@ -77,9 +77,10 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
+		#"cpu #c4a7e7 0 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+		"load #c4a7e7 0" \
 		"lan_ip #907aa9 0 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
 		"wan_ip #907aa9 0" \
-		"vcs_branch #c4a7e7 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 286983 255" \
 		#"vcs_compare #31748f 255" \
@@ -91,18 +92,17 @@ fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-		"tmux_session_info #b4637a 0" \
-		"hostname #ebbcba 0" \
-		"pwd #b4637a 0" \
+		#"tmux_session_info #b4637a 0" \
+		#"hostname #ebbcba 0" \
+		"pwd #b4637a 0 " \
+		"vcs_branch #b4637a 0  ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		#"mailcount 9 255" \
 		"now_playing #ebbcba 0" \
 		"date_day #b4637a 0" \
 		"date #b4637a 0 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		"time #b4637a 0 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		#"cpu 240 136" \
 		#"xkb_layout 125 117" \
 		#"macos_notification_count 29 255" \
-		#"load 237 167" \
 		#"tmux_mem_cpu_load 234 136" \
 		#"battery 137 127" \
 		#"weather 37 255" \
